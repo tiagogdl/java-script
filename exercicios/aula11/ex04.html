@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalidade</title>
+</head>
+<body>
+    <h1>Sistema de Naturalidade</h1>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Enviar" onclick=desc()>
+    <div id="res"></div>
+
+    <script>
+        function desc () {
+            var pais = window.document.querySelector('input#pais').value
+            var paism = pais.toUpperCase()
+            var res = window.document.querySelector('div#res')
+
+            res.innerHTML = `<p> Você mora no país ${pais}! </p>`
+
+            if (paism == 'BRASIL') {
+                res.innerHTML += `<p> Você é Brasileiro! </p>` 
+            } else {
+                res.innerHTML += `<p> Você é estrangeiro! </p>`   
+            }
+        }
+    </script>
+</body>
+</html>
