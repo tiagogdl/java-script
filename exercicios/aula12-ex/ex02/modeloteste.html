@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+    <link rel="stylesheet" href="styleteste.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div id="texto">
+            <label for="ano">Ano de Nascimento: </label>
+            <input type="number" name="ano" id="ano"> 
+            <br>
+            <label for="sexo">Sexo: </label>
+            <input type="radio" name="sexo" id="Masc">
+            <label for="Masc">Masculino</label>
+            <input type="radio" name="sexo" id="Fem">
+            <label for="Fem">Feminino</label>
+            <br>
+            <input type="submit" value="Verificar" onclick="verificar()">
+        </div>
+        <div id="res">
+            <p id="rest"></p>
+            <img id="img" src="" alt="">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Tiago Dias</p>
+    </footer>
+
+    <script src="scriptteste.js"></script>
+</body>
+</html>
