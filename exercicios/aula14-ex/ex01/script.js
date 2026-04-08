@@ -10,6 +10,8 @@ function contar() {
 
     var res = document.getElementById('res')
 
+    res.innerHTML = 'Contando: <br>'
+
     if (inicio_text.value.length == 0 || fim_text.value.length == 0 || passo_text.value.length == 0) {
         alert('Preencha todos os campos!')
         return
@@ -19,8 +21,6 @@ function contar() {
         alert('Passo inválido! Considerando passo 1.')
         passo = 1
     }
-
-    res.innerHTML = ''
 
     if (inicio < fim) {
         while (inicio <= fim) {

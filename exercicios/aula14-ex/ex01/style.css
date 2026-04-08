@@ -29,3 +29,7 @@ div#div1{
     line-height: 50px;
     padding: 8px;
 }
+
+p{
+    margin: 0px;
+}
